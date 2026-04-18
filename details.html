@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سكنى - تفاصيل السكن</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="details-wrapper">
+        <div class="row g-0" id="sakanDetailContent">
+            <div class="col-md-6 bg-light">
+                <img id="mainImg" src="" class="img-fluid w-100" 
+                     style="object-fit: cover; height: 450px;" alt="صورة السكن الرئيسية">
+                
+                <div class="p-3">
+                    <div class="row g-2" id="thumbnailsContainer">
+                        </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 info-section">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-success">الرئيسية</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">تفاصيل السكن</li>
+                    </ol>
+                </nav>
+
+                <h2 id="sakanTitle" class="mb-2 fw-bold">جاري التحميل...</h2>
+                <p id="sakanLocationHeader" class="text-muted mb-3">📍 الموقع سيظهر هنا</p>
+                
+                <div class="price-tag mb-4" id="sakanPrice">-- ج.م</div>
+                
+                <div class="details-list">
+                    <p><span class="info-label">📍 الموقع:</span> <span id="sakanLocation">--</span></p>
+                    <p><span class="info-label">🏠 المساحة:</span> <span id="sakanArea">--</span></p>
+                    <p><span class="info-label">🛏️ الغرف:</span> <span id="sakanRooms">--</span></p>
+                    <p><span class="info-label">🏢 الدور:</span> <span id="sakanFloor">--</span></p>
+                    <hr>
+                    <p><span class="info-label">👤 المالك:</span> <span id="sakanOwner">--</span></p>
+                    <p><span class="info-label">📞 الهاتف:</span> <span id="sakanPhone">--</span></p>
+                </div>
+                
+                <div class="d-grid gap-3 mt-4">
+                    <a id="whatsappBtn" href="#" target="_blank" class="btn btn-whatsapp btn-lg">
+                        <i class="fab fa-whatsapp me-2"></i> تواصل عبر واتساب
+                    </a>
+                    <a id="callBtn" href="#" class="btn btn-outline-dark btn-lg">
+                        <i class="fas fa-phone-alt me-2"></i> اتصال هاتفي
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="errorMessage" class="p-5 text-center d-none">
+            <h1 class="display-1">⚠️</h1>
+            <h3 class="my-4">عذراً، لم نتمكن من العثور على هذا السكن</h3>
+            <p class="text-muted">ربما تم حذف الإعلان أو أن الرابط غير صحيح.</p>
+            <a href="index.html" class="btn btn-success px-5 py-2 mt-3 rounded-pill">العودة للرئيسية</a>
+        </div>
+    </div>
+</div>
+<script src="details.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+</body>
+</html>
